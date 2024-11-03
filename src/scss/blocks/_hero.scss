@@ -1,0 +1,82 @@
+.hero {
+	background: rgb(33, 28, 36);
+	background: linear-gradient(90deg, rgba(33, 28, 36, 1) 0%, rgba(33, 28, 36, 1) 100%);
+	&__row {
+		display: flex;
+		justify-content: center;
+		@media (width < 768px) {
+			display: grid;
+			grid-auto-flow: row;
+		}
+	}
+}
+.hero__content {
+	color: #fff;
+	width: 50%;
+	h2 {
+		margin-top: 188px;
+		font-size: 25px;
+		line-height: 0.78125;
+		font-family: Figtree;
+		opacity: 40%;
+		margin-bottom: 24px;
+		@media (width <= 768px) {
+			margin-top: 88px;
+			margin-bottom: 16px;
+			font-size: 25px;
+		}
+	}
+	h1 {
+		font-size: 96px;
+		font-family: sf-thin;
+		margin-bottom: 24px;
+		line-height: 0.8125;
+		letter-spacing: -1%;
+		@media (width <= 768px) {
+			margin-bottom: 16px;
+			font-size: 72px;
+		}
+	}
+	h1 span {
+		font-family: sf-semibold;
+		line-height: 1;
+	}
+	span {
+		@media (width <= 768px) {
+			margin-bottom: 16px;
+			display: block;
+		}
+	}
+	p {
+		color: #909090;
+		font-size: 18px;
+		font-family: sf-medium;
+		margin-bottom: 24px;
+		line-height: 0.75;
+		@media (width <= 768px) {
+			margin-bottom: 32px;
+			line-height: 1.2;
+		}
+	}
+	@media (width <= 768px) {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+.hero__shop {
+	font-size: 16px;
+	padding: 16px 56px;
+	border: 1px solid #fff;
+	border-radius: 6px;
+	@media (width <= 768px) {
+		margin-bottom: 48px;
+	}
+}
+.hero__bg {
+	text-align: center;
+	width: 50%;
+	@media (width <= 768px) {
+		width: 100%;
+	}
+}

@@ -1,0 +1,40 @@
+.card {
+	background-color: #f6f6f6;
+	height: 100%;
+	gap: 12px;
+	width: 262px;
+	text-align: center;
+	justify-content: center;
+	border-radius: 9px;
+
+	&:hover {
+		.card__fav {
+			pointer-events: all;
+		}
+	}
+}
+.card__fav {
+	transition: all 0.2s ease-in;
+	pointer-events: none;
+	justify-self: end;
+}
+.card__picture {
+	height: 160px;
+	width: 160px;
+	justify-self: center;
+	margin-bottom: 16px;
+
+	justify-items: center;
+}
+.card__desc {
+	min-height: 84px;
+	font-size: 16px;
+	margin-bottom: 24px;
+	line-height: 1.5;
+	font-family: sf-medium;
+	flex-grow: 1;
+}
+.card__price {
+	font-size: 24px;
+	font-family: sf-semibold;
+}

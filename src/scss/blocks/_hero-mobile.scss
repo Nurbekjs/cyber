@@ -1,0 +1,53 @@
+.hero__grid {
+	@media screen and (width <= 768px) {
+		grid-template-columns: auto;
+		grid-template-rows: repeat(4, 1fr);
+		grid-template-areas:
+			'air'
+			'vis'
+			'ps'
+			'mac';
+	}
+}
+@media screen and (width <= 768px) {
+	.hero__img-mob {
+		display: block;
+		// margin-top: 40px;
+	}
+	.hero__img-desktop {
+		display: none;
+	}
+	.hero__playstation,
+	.hero__airpods,
+	.hero__vision,
+	.hero__macbook {
+		text-align: center;
+		display: grid;
+		grid-auto-flow: row;
+		grid-template-areas:
+			'img'
+			'desc';
+	}
+	.playstation__title {
+		font-size: 34px;
+	}
+	.hero__text {
+		font-size: 16px;
+		// margin-bottom: 40px;
+	}
+
+	.macbook__title {
+		margin-left: 0;
+		font-size: 34px;
+	}
+	.text_break {
+		display: inline;
+	}
+	.vision__title {
+		margin-left: 0;
+	}
+	.hero__shop-now {
+		margin-top: 16px;
+		margin-bottom: 40px;
+	}
+}

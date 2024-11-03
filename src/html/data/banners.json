@@ -1,0 +1,26 @@
+[
+	{
+		"class": "headphones",
+		"img": "01",
+		"title": "Popular Products",
+		"text": "iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use."
+	},
+	{
+		"class": "ipad",
+		"img": "02",
+		"title": "Ipad Pro",
+		"text": "iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use."
+	},
+	{
+		"class": "galaxy",
+		"img": "03",
+		"title": "Samsung Galaxy ",
+		"text": "iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use."
+	},
+	{
+		"class": "macbook",
+		"img": "04",
+		"title": "Macbook Pro",
+		"text": "iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use."
+	}
+]

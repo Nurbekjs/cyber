@@ -1,0 +1,157 @@
+.cart__holder {
+	position: relative;
+}
+.cart_amount {
+	position: absolute;
+	padding: 0.2em 0.4em;
+	bottom: 14px;
+	left: 14px;
+	background-color: #ad1126;
+	border-radius: 50%;
+	font-size: 14px;
+	color: #fff;
+}
+.cart_modal_box {
+	max-width: 550px;
+	position: fixed;
+	top: 48px;
+	right: 0%;
+	padding: 8px;
+	margin: 8px;
+	border: 0.5px solid #b5b5b5;
+	border-radius: 8px;
+	background-color: #fff;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.4s;
+}
+
+.cart_modal_box.active {
+	visibility: visible;
+	opacity: 1;
+	transition: 0.4s;
+	z-index: 3;
+}
+.cart_item {
+	padding: 4px 0;
+	display: flex;
+
+	align-items: center;
+	border-bottom: 1px solid #a3a3a3;
+	align-items: center;
+	box-sizing: border-box;
+}
+.cart_item:first-child {
+	border-top: none;
+}
+.cart_item:last-child {
+	border-bottom: none;
+}
+.cart_item_counter {
+	display: flex;
+	font-size: 14px;
+	margin-right: 12px;
+	align-items: center;
+}
+
+.cart_wrapper {
+	padding: 5px 0 5px 0;
+}
+.modal__top {
+	display: flex;
+	justify-content: space-between;
+}
+.cart_top span {
+	cursor: pointer;
+}
+.cart_item_img {
+	width: 109px;
+	height: 109px;
+}
+.cart_item_img img {
+	height: 100%;
+	width: 100%;
+	size: cover;
+}
+
+.cart_item_desc {
+	padding: 8px;
+	max-width: 100px;
+	flex-grow: 1;
+
+	p {
+		font-size: 14px;
+		color: #909090;
+	}
+	h2 {
+		font-size: 14px;
+	}
+}
+.cart_item_remove {
+	font-size: 12px;
+	cursor: pointer;
+	border: 0.5px solid #a4a4a4;
+	padding: 3px 5px;
+	margin: 0px 8px;
+}
+.items_control {
+	font-size: 15px;
+	width: 24px;
+	height: 24px;
+	padding: 4px;
+	vertical-align: middle;
+	cursor: pointer;
+	user-select: none;
+	text-align: center;
+}
+.items_current {
+	border: 0.5px solid #d9d9d9;
+	padding: 3px 9px;
+	border-radius: 4px;
+	font-size: 12px;
+}
+.cart_item_price {
+	font-size: 14px;
+	font-family: sf-semibold;
+	flex-grow: 1;
+}
+
+.order_btn:hover {
+	background: #eaeaea;
+	color: #000;
+}
+.order_form {
+	margin-top: 16px;
+	padding-top: 16px;
+	border-top: #a4a4a4 solid 0.5px;
+}
+.order_btn {
+	background: #353535;
+	color: #fff;
+	margin-top: 16px;
+	padding: 8px 30px;
+	border-radius: 8px;
+}
+
+.basket_title {
+	padding: 0 0 16px 0;
+}
+.cart_wrapper_title h2 {
+	font-size: 16px;
+	font-family: sf-semibold;
+}
+.empty_cart {
+	font-size: 15px;
+	display: inline-block;
+	font-family: sf-light;
+	background-color: #ededed;
+	margin-top: 10px;
+	padding: 16px 16px;
+	border-radius: 4px;
+}
+.modal_close {
+	text-align: end;
+}
+.none {
+	display: none;
+}

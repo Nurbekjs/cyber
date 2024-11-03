@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Стартовый шаблон</title>
+		<link
+			href="https://fonts.googleapis.com/css?family=Figtree:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body>
+		<!--  -->
+		<header class="header">
+	<div class="container">
+		<div class="header__row">
+			<div class="logo"><img src="./img/logo/Logo.svg" alt="" /></div>
+			<div class="search">
+				<div class="search__icon"></div>
+				<input type="text" class="search__input" placeholder="Search" />
+			</div>
+			<div class="header__menu">
+				<div class="menu__item">Home</div>
+				<div class="menu__item">About</div>
+				<div class="menu__item">Contact Us</div>
+				<div class="menu__item">Blog</div>
+			</div>
+			<div class="user__cabinet">
+				<button class="user__item"><img src="./../../img/icons/menu/Favorites.svg" alt="" /></button>
+				<div class="cart__holder">
+					<button class="user__item" id="open_modal">
+						<img src="./../../img/icons/menu/Cart1.svg" alt="" />
+					</button>
+					<div class="cart_amount" id="cart_amount">0</div>
+				</div>
+
+				<div class="cart">
+	<div class="cart_modal_box active" id="cart_modal_box">
+		<div class="modal__top">
+			<h2>Your Order:</h2>
+			<div class="modal_close"><i id="modal_close" class="fa-solid fa-xmark"></i></div>
+		</div>
+
+		<div class="cart_wrapper">
+			<div class="cart_wrapper_title">
+				<div class="empty_cart" data-cart-empty><h3>Cart is empty</h3></div>
+			</div>
+		</div>
+
+		<div class="cartWrapper"></div>
+
+		<div class="order_form" id="order_form">
+			<div class="cart_total">Total: <span class="total_price">0</span> $</div>
+			<button class="order_btn">Order</button>
+		</div>
+	</div>
+</div>
+
+
+				<button class="user__item" id="open__modal"><img src="./../../img/icons/menu/User.svg" alt="" /></button>
+			</div>
+			<button class="mobile-nav-btn">
+				<div class="nav-icon"></div>
+			</button>
+		</div>
+	</div>
+</header>
+<div class="mobile-nav">
+	<ul class="mobile-nav__list">
+		<li><a href="#" class="active">Home</a></li>
+		<li><a href="#!">About</a></li>
+		<li><a href="#!">Contact Us</a></li>
+		<li><a href="#!">Blog</a></li>
+	</ul>
+</div>
+
+
+		<!--  -->
+		
+		<!--  -->
+		
+		<!--  -->
+		
+		<!--  -->
+		<div class="products">
+	<div class="container">
+		<div class="products__title">
+			<h2 class="headline-4">New Arrival</h2>
+			<h2 class="headline-4">Bestseller</h2>
+			<h2 class="headline-4">Featured Products</h2>
+		</div>
+		<div class="products__cards"><div class="card" data-id="01">
+	<div class="card__fav">
+		<button class="btn-fav">
+			<svg class="btn-fav__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path
+					fill-rule="evenodd"
+					clip-rule="evenodd"
+					d="M10.577 5.76422C10.2546 6.07365 9.74548 6.07365 9.42304 5.76422L8.84604 5.2105C8.17068 4.56239 7.25832 4.16667 6.25004 4.16667C4.17897 4.16667 2.50004 5.8456 2.50004 7.91667C2.50004 9.90219 3.57486 11.5417 5.1265 12.8888C6.67947 14.237 8.53621 15.1312 9.64558 15.5876C9.87754 15.683 10.1225 15.683 10.3545 15.5876C11.4639 15.1312 13.3206 14.237 14.8736 12.8888C16.4252 11.5417 17.5 9.90218 17.5 7.91667C17.5 5.8456 15.8211 4.16667 13.75 4.16667C12.7418 4.16667 11.8294 4.56239 11.154 5.2105L10.577 5.76422ZM10 4.00798C9.0268 3.074 7.70545 2.5 6.25004 2.5C3.2585 2.5 0.833374 4.92512 0.833374 7.91667C0.833374 13.2235 6.64199 16.1542 9.01153 17.1289C9.64968 17.3914 10.3504 17.3914 10.9885 17.1289C13.3581 16.1542 19.1667 13.2235 19.1667 7.91667C19.1667 4.92512 16.7416 2.5 13.75 2.5C12.2946 2.5 10.9733 3.074 10 4.00798Z"
+					fill=""
+				/>
+			</svg>
+		</button>
+	</div>
+	<div class="">
+		<img class="card__picture" src="./img/products/01.png" alt="Apple iPhone 14 Pro Max 128GB Deep Purple (MQ9T3RX/A)" />
+	</div>
+	<div class="card__desc">
+		<div class="card__title">Apple iPhone 14 Pro Max 128GB Deep Purple (MQ9T3RX/A)</div>
+		<div class="card__price">999 &#36</div>
+	</div>
+	<div class="card__btn">
+		<button class="btn btn--small" data-cart>Buy Now</button>
+	</div>
+</div>
+<div class="card" data-id="02">
+	<div class="card__fav">
+		<button class="btn-fav">
+			<svg class="btn-fav__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path
+					fill-rule="evenodd"
+					clip-rule="evenodd"
+					d="M10.577 5.76422C10.2546 6.07365 9.74548 6.07365 9.42304 5.76422L8.84604 5.2105C8.17068 4.56239 7.25832 4.16667 6.25004 4.16667C4.17897 4.16667 2.50004 5.8456 2.50004 7.91667C2.50004 9.90219 3.57486 11.5417 5.1265 12.8888C6.67947 14.237 8.53621 15.1312 9.64558 15.5876C9.87754 15.683 10.1225 15.683 10.3545 15.5876C11.4639 15.1312 13.3206 14.237 14.8736 12.8888C16.4252 11.5417 17.5 9.90218 17.5 7.91667C17.5 5.8456 15.8211 4.16667 13.75 4.16667C12.7418 4.16667 11.8294 4.56239 11.154 5.2105L10.577 5.76422ZM10 4.00798C9.0268 3.074 7.70545 2.5 6.25004 2.5C3.2585 2.5 0.833374 4.92512 0.833374 7.91667C0.833374 13.2235 6.64199 16.1542 9.01153 17.1289C9.64968 17.3914 10.3504 17.3914 10.9885 17.1289C13.3581 16.1542 19.1667 13.2235 19.1667 7.91667C19.1667 4.92512 16.7416 2.5 13.75 2.5C12.2946 2.5 10.9733 3.074 10 4.00798Z"
+					fill=""
+				/>
+			</svg>
+		</button>
+	</div>
+	<div class="">
+		<img class="card__picture" src="./img/products/02.png" alt="Blackmagic Pocket Cinema Camera 6k" />
+	</div>
+	<div class="card__desc">
+		<div class="card__title">Blackmagic Pocket Cinema Camera 6k</div>
+		<div class="card__price">2535 &#36</div>
+	</div>
+	<div class="card__btn">
+		<button class="btn btn--small" data-cart>Buy Now</button>
+	</div>
+</div>
+<div class="card" data-id="03">
+	<div class="card__fav">
+		<button class="btn-fav">
+			<svg class="btn-fav__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path
+					fill-rule="evenodd"
+					clip-rule="evenodd"
+					d="M10.577 5.76422C10.2546 6.07365 9.74548 6.07365 9.42304 5.76422L8.84604 5.2105C8.17068 4.56239 7.25832 4.16667 6.25004 4.16667C4.17897 4.16667 2.50004 5.8456 2.50004 7.91667C2.50004 9.90219 3.57486 11.5417 5.1265 12.8888C6.67947 14.237 8.53621 15.1312 9.64558 15.5876C9.87754 15.683 10.1225 15.683 10.3545 15.5876C11.4639 15.1312 13.3206 14.237 14.8736 12.8888C16.4252 11.5417 17.5 9.90218 17.5 7.91667C17.5 5.8456 15.8211 4.16667 13.75 4.16667C12.7418 4.16667 11.8294 4.56239 11.154 5.2105L10.577 5.76422ZM10 4.00798C9.0268 3.074 7.70545 2.5 6.25004 2.5C3.2585 2.5 0.833374 4.92512 0.833374 7.91667C0.833374 13.2235 6.64199 16.1542 9.01153 17.1289C9.64968 17.3914 10.3504 17.3914 10.9885 17.1289C13.3581 16.1542 19.1667 13.2235 19.1667 7.91667C19.1667 4.92512 16.7416 2.5 13.75 2.5C12.2946 2.5 10.9733 3.074 10 4.00798Z"
+					fill=""
+				/>
+			</svg>
+		</button>
+	</div>
+	<div class="">
+		<img class="card__picture" src="./img/products/03.png" alt="Apple Watch Series 9 GPS 41mm Starlight Aluminium Case" />
+	</div>
+	<div class="card__desc">
+		<div class="card__title">Apple Watch Series 9 GPS 41mm Starlight Aluminium Case</div>
+		<div class="card__price">399 &#36</div>
+	</div>
+	<div class="card__btn">
+		<button class="btn btn--small" data-cart>Buy Now</button>
+	</div>
+</div>
+<div class="card" data-id="04">
+	<div class="card__fav">
+		<button class="btn-fav">
+			<svg class="btn-fav__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path
+					fill-rule="evenodd"
+					clip-rule="evenodd"
+					d="M10.577 5.76422C10.2546 6.07365 9.74548 6.07365 9.42304 5.76422L8.84604 5.2105C8.17068 4.56239 7.25832 4.16667 6.25004 4.16667C4.17897 4.16667 2.50004 5.8456 2.50004 7.91667C2.50004 9.90219 3.57486 11.5417 5.1265 12.8888C6.67947 14.237 8.53621 15.1312 9.64558 15.5876C9.87754 15.683 10.1225 15.683 10.3545 15.5876C11.4639 15.1312 13.3206 14.237 14.8736 12.8888C16.4252 11.5417 17.5 9.90218 17.5 7.91667C17.5 5.8456 15.8211 4.16667 13.75 4.16667C12.7418 4.16667 11.8294 4.56239 11.154 5.2105L10.577 5.76422ZM10 4.00798C9.0268 3.074 7.70545 2.5 6.25004 2.5C3.2585 2.5 0.833374 4.92512 0.833374 7.91667C0.833374 13.2235 6.64199 16.1542 9.01153 17.1289C9.64968 17.3914 10.3504 17.3914 10.9885 17.1289C13.3581 16.1542 19.1667 13.2235 19.1667 7.91667C19.1667 4.92512 16.7416 2.5 13.75 2.5C12.2946 2.5 10.9733 3.074 10 4.00798Z"
+					fill=""
+				/>
+			</svg>
+		</button>
+	</div>
+	<div class="">
+		<img class="card__picture" src="./img/products/04.png" alt="AirPods Max Silver" />
+	</div>
+	<div class="card__desc">
+		<div class="card__title">AirPods Max Silver</div>
+		<div class="card__price">549 &#36</div>
+	</div>
+	<div class="card__btn">
+		<button class="btn btn--small" data-cart>Buy Now</button>
+	</div>
+</div>
+<div class="card" data-id="05">
+	<div class="card__fav">
+		<button class="btn-fav">
+			<svg class="btn-fav__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path
+					fill-rule="evenodd"
+					clip-rule="evenodd"
+					d="M10.577 5.76422C10.2546 6.07365 9.74548 6.07365 9.42304 5.76422L8.84604 5.2105C8.17068 4.56239 7.25832 4.16667 6.25004 4.16667C4.17897 4.16667 2.50004 5.8456 2.50004 7.91667C2.50004 9.90219 3.57486 11.5417 5.1265 12.8888C6.67947 14.237 8.53621 15.1312 9.64558 15.5876C9.87754 15.683 10.1225 15.683 10.3545 15.5876C11.4639 15.1312 13.3206 14.237 14.8736 12.8888C16.4252 11.5417 17.5 9.90218 17.5 7.91667C17.5 5.8456 15.8211 4.16667 13.75 4.16667C12.7418 4.16667 11.8294 4.56239 11.154 5.2105L10.577 5.76422ZM10 4.00798C9.0268 3.074 7.70545 2.5 6.25004 2.5C3.2585 2.5 0.833374 4.92512 0.833374 7.91667C0.833374 13.2235 6.64199 16.1542 9.01153 17.1289C9.64968 17.3914 10.3504 17.3914 10.9885 17.1289C13.3581 16.1542 19.1667 13.2235 19.1667 7.91667C19.1667 4.92512 16.7416 2.5 13.75 2.5C12.2946 2.5 10.9733 3.074 10 4.00798Z"
+					fill=""
+				/>
+			</svg>
+		</button>
+	</div>
+	<div class="">
+		<img class="card__picture" src="./img/products/05.png" alt="Samsung Galaxy Watch6 Classic 47mm Black" />
+	</div>
+	<div class="card__desc">
+		<div class="card__title">Samsung Galaxy Watch6 Classic 47mm Black</div>
+		<div class="card__price">224.99 &#36</div>
+	</div>
+	<div class="card__btn">
+		<button class="btn btn--small" data-cart>Buy Now</button>
+	</div>
+</div>
+<div class="card" data-id="06">
+	<div class="card__fav">
+		<button class="btn-fav">
+			<svg class="btn-fav__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path
+					fill-rule="evenodd"
+					clip-rule="evenodd"
+					d="M10.577 5.76422C10.2546 6.07365 9.74548 6.07365 9.42304 5.76422L8.84604 5.2105C8.17068 4.56239 7.25832 4.16667 6.25004 4.16667C4.17897 4.16667 2.50004 5.8456 2.50004 7.91667C2.50004 9.90219 3.57486 11.5417 5.1265 12.8888C6.67947 14.237 8.53621 15.1312 9.64558 15.5876C9.87754 15.683 10.1225 15.683 10.3545 15.5876C11.4639 15.1312 13.3206 14.237 14.8736 12.8888C16.4252 11.5417 17.5 9.90218 17.5 7.91667C17.5 5.8456 15.8211 4.16667 13.75 4.16667C12.7418 4.16667 11.8294 4.56239 11.154 5.2105L10.577 5.76422ZM10 4.00798C9.0268 3.074 7.70545 2.5 6.25004 2.5C3.2585 2.5 0.833374 4.92512 0.833374 7.91667C0.833374 13.2235 6.64199 16.1542 9.01153 17.1289C9.64968 17.3914 10.3504 17.3914 10.9885 17.1289C13.3581 16.1542 19.1667 13.2235 19.1667 7.91667C19.1667 4.92512 16.7416 2.5 13.75 2.5C12.2946 2.5 10.9733 3.074 10 4.00798Z"
+					fill=""
+				/>
+			</svg>
+		</button>
+	</div>
+	<div class="">
+		<img class="card__picture" src="./img/products/06.png" alt="Galaxy Z Fold5 Unlocked | 256GB | Phantom Black" />
+	</div>
+	<div class="card__desc">
+		<div class="card__title">Galaxy Z Fold5 Unlocked | 256GB | Phantom Black</div>
+		<div class="card__price">299.99 &#36</div>
+	</div>
+	<div class="card__btn">
+		<button class="btn btn--small" data-cart>Buy Now</button>
+	</div>
+</div>
+<div class="card" data-id="07">
+	<div class="card__fav">
+		<button class="btn-fav">
+			<svg class="btn-fav__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path
+					fill-rule="evenodd"
+					clip-rule="evenodd"
+					d="M10.577 5.76422C10.2546 6.07365 9.74548 6.07365 9.42304 5.76422L8.84604 5.2105C8.17068 4.56239 7.25832 4.16667 6.25004 4.16667C4.17897 4.16667 2.50004 5.8456 2.50004 7.91667C2.50004 9.90219 3.57486 11.5417 5.1265 12.8888C6.67947 14.237 8.53621 15.1312 9.64558 15.5876C9.87754 15.683 10.1225 15.683 10.3545 15.5876C11.4639 15.1312 13.3206 14.237 14.8736 12.8888C16.4252 11.5417 17.5 9.90218 17.5 7.91667C17.5 5.8456 15.8211 4.16667 13.75 4.16667C12.7418 4.16667 11.8294 4.56239 11.154 5.2105L10.577 5.76422ZM10 4.00798C9.0268 3.074 7.70545 2.5 6.25004 2.5C3.2585 2.5 0.833374 4.92512 0.833374 7.91667C0.833374 13.2235 6.64199 16.1542 9.01153 17.1289C9.64968 17.3914 10.3504 17.3914 10.9885 17.1289C13.3581 16.1542 19.1667 13.2235 19.1667 7.91667C19.1667 4.92512 16.7416 2.5 13.75 2.5C12.2946 2.5 10.9733 3.074 10 4.00798Z"
+					fill=""
+				/>
+			</svg>
+		</button>
+	</div>
+	<div class="">
+		<img class="card__picture" src="./img/products/07.png" alt="Galaxy Buds FE Graphite" />
+	</div>
+	<div class="card__desc">
+		<div class="card__title">Galaxy Buds FE Graphite</div>
+		<div class="card__price">349.99 &#36</div>
+	</div>
+	<div class="card__btn">
+		<button class="btn btn--small" data-cart>Buy Now</button>
+	</div>
+</div>
+<div class="card" data-id="08">
+	<div class="card__fav">
+		<button class="btn-fav">
+			<svg class="btn-fav__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path
+					fill-rule="evenodd"
+					clip-rule="evenodd"
+					d="M10.577 5.76422C10.2546 6.07365 9.74548 6.07365 9.42304 5.76422L8.84604 5.2105C8.17068 4.56239 7.25832 4.16667 6.25004 4.16667C4.17897 4.16667 2.50004 5.8456 2.50004 7.91667C2.50004 9.90219 3.57486 11.5417 5.1265 12.8888C6.67947 14.237 8.53621 15.1312 9.64558 15.5876C9.87754 15.683 10.1225 15.683 10.3545 15.5876C11.4639 15.1312 13.3206 14.237 14.8736 12.8888C16.4252 11.5417 17.5 9.90218 17.5 7.91667C17.5 5.8456 15.8211 4.16667 13.75 4.16667C12.7418 4.16667 11.8294 4.56239 11.154 5.2105L10.577 5.76422ZM10 4.00798C9.0268 3.074 7.70545 2.5 6.25004 2.5C3.2585 2.5 0.833374 4.92512 0.833374 7.91667C0.833374 13.2235 6.64199 16.1542 9.01153 17.1289C9.64968 17.3914 10.3504 17.3914 10.9885 17.1289C13.3581 16.1542 19.1667 13.2235 19.1667 7.91667C19.1667 4.92512 16.7416 2.5 13.75 2.5C12.2946 2.5 10.9733 3.074 10 4.00798Z"
+					fill=""
+				/>
+			</svg>
+		</button>
+	</div>
+	<div class="">
+		<img class="card__picture" src="./img/products/08.png" alt="Apple iPad 9 10.2 64GB Wi-Fi Silver (MK2L3) 2021" />
+	</div>
+	<div class="card__desc">
+		<div class="card__title">Apple iPad 9 10.2 64GB Wi-Fi Silver (MK2L3) 2021</div>
+		<div class="card__price">149.99 &#36</div>
+	</div>
+	<div class="card__btn">
+		<button class="btn btn--small" data-cart>Buy Now</button>
+	</div>
+</div>
+</div>
+	</div>
+</div>
+
+		<!--  -->
+		<div class="banners"><div class="banners__headphones">
+	<div class="banners__picture">
+		<img src="./img/banners/01.png" alt="Headphone" />
+	</div>
+	<div class="banners__desc">
+		<div class="banners__title">Popular Products</div>
+		<div class="banners__text">iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use.</div>
+	</div>
+	<div class="banner__btn">
+		<button class="btn btn--small">Shop Now</button>
+	</div>
+</div>
+<div class="banners__ipad">
+	<div class="banners__picture">
+		<img src="./img/banners/02.png" alt="Headphone" />
+	</div>
+	<div class="banners__desc">
+		<div class="banners__title">Ipad Pro</div>
+		<div class="banners__text">iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use.</div>
+	</div>
+	<div class="banner__btn">
+		<button class="btn btn--small">Shop Now</button>
+	</div>
+</div>
+<div class="banners__galaxy">
+	<div class="banners__picture">
+		<img src="./img/banners/03.png" alt="Headphone" />
+	</div>
+	<div class="banners__desc">
+		<div class="banners__title">Samsung Galaxy </div>
+		<div class="banners__text">iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use.</div>
+	</div>
+	<div class="banner__btn">
+		<button class="btn btn--small">Shop Now</button>
+	</div>
+</div>
+<div class="banners__macbook">
+	<div class="banners__picture">
+		<img src="./img/banners/04.png" alt="Headphone" />
+	</div>
+	<div class="banners__desc">
+		<div class="banners__title">Macbook Pro</div>
+		<div class="banners__text">iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use.</div>
+	</div>
+	<div class="banner__btn">
+		<button class="btn btn--small">Shop Now</button>
+	</div>
+</div>
+</div>
+
+		<!--  -->
+		<div class="discount">
+	<div class="container">
+		<div class="discount__title">
+			<h2 class="headline-4">Discounts up to -50%</h2>
+		</div>
+		<div class="products__cards"><div class="card" data-id="01">
+	<div class="card__fav">
+		<button class="btn-fav">
+			<svg class="btn-fav__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path
+					fill-rule="evenodd"
+					clip-rule="evenodd"
+					d="M10.577 5.76422C10.2546 6.07365 9.74548 6.07365 9.42304 5.76422L8.84604 5.2105C8.17068 4.56239 7.25832 4.16667 6.25004 4.16667C4.17897 4.16667 2.50004 5.8456 2.50004 7.91667C2.50004 9.90219 3.57486 11.5417 5.1265 12.8888C6.67947 14.237 8.53621 15.1312 9.64558 15.5876C9.87754 15.683 10.1225 15.683 10.3545 15.5876C11.4639 15.1312 13.3206 14.237 14.8736 12.8888C16.4252 11.5417 17.5 9.90218 17.5 7.91667C17.5 5.8456 15.8211 4.16667 13.75 4.16667C12.7418 4.16667 11.8294 4.56239 11.154 5.2105L10.577 5.76422ZM10 4.00798C9.0268 3.074 7.70545 2.5 6.25004 2.5C3.2585 2.5 0.833374 4.92512 0.833374 7.91667C0.833374 13.2235 6.64199 16.1542 9.01153 17.1289C9.64968 17.3914 10.3504 17.3914 10.9885 17.1289C13.3581 16.1542 19.1667 13.2235 19.1667 7.91667C19.1667 4.92512 16.7416 2.5 13.75 2.5C12.2946 2.5 10.9733 3.074 10 4.00798Z"
+					fill=""
+				/>
+			</svg>
+		</button>
+	</div>
+	<div class="">
+		<img src="./img/discount/01.png" class="card__picture" alt="Headphone" />
+	</div>
+	<div class="card__desc">
+		<div class="card__title">Apple iPhone 14 Pro 512GB Gold (MQ233)</div>
+		<div class="card__price">1437 &#36</div>
+	</div>
+	<div class="card__btn">
+		<button class="btn btn--small" data-cart>Buy Now</button>
+	</div>
+</div>
+<div class="card" data-id="02">
+	<div class="card__fav">
+		<button class="btn-fav">
+			<svg class="btn-fav__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path
+					fill-rule="evenodd"
+					clip-rule="evenodd"
+					d="M10.577 5.76422C10.2546 6.07365 9.74548 6.07365 9.42304 5.76422L8.84604 5.2105C8.17068 4.56239 7.25832 4.16667 6.25004 4.16667C4.17897 4.16667 2.50004 5.8456 2.50004 7.91667C2.50004 9.90219 3.57486 11.5417 5.1265 12.8888C6.67947 14.237 8.53621 15.1312 9.64558 15.5876C9.87754 15.683 10.1225 15.683 10.3545 15.5876C11.4639 15.1312 13.3206 14.237 14.8736 12.8888C16.4252 11.5417 17.5 9.90218 17.5 7.91667C17.5 5.8456 15.8211 4.16667 13.75 4.16667C12.7418 4.16667 11.8294 4.56239 11.154 5.2105L10.577 5.76422ZM10 4.00798C9.0268 3.074 7.70545 2.5 6.25004 2.5C3.2585 2.5 0.833374 4.92512 0.833374 7.91667C0.833374 13.2235 6.64199 16.1542 9.01153 17.1289C9.64968 17.3914 10.3504 17.3914 10.9885 17.1289C13.3581 16.1542 19.1667 13.2235 19.1667 7.91667C19.1667 4.92512 16.7416 2.5 13.75 2.5C12.2946 2.5 10.9733 3.074 10 4.00798Z"
+					fill=""
+				/>
+			</svg>
+		</button>
+	</div>
+	<div class="">
+		<img src="./img/discount/02.png" class="card__picture" alt="Headphone" />
+	</div>
+	<div class="card__desc">
+		<div class="card__title">AirPods Max Silver</div>
+		<div class="card__price">549 &#36</div>
+	</div>
+	<div class="card__btn">
+		<button class="btn btn--small" data-cart>Buy Now</button>
+	</div>
+</div>
+<div class="card" data-id="03">
+	<div class="card__fav">
+		<button class="btn-fav">
+			<svg class="btn-fav__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path
+					fill-rule="evenodd"
+					clip-rule="evenodd"
+					d="M10.577 5.76422C10.2546 6.07365 9.74548 6.07365 9.42304 5.76422L8.84604 5.2105C8.17068 4.56239 7.25832 4.16667 6.25004 4.16667C4.17897 4.16667 2.50004 5.8456 2.50004 7.91667C2.50004 9.90219 3.57486 11.5417 5.1265 12.8888C6.67947 14.237 8.53621 15.1312 9.64558 15.5876C9.87754 15.683 10.1225 15.683 10.3545 15.5876C11.4639 15.1312 13.3206 14.237 14.8736 12.8888C16.4252 11.5417 17.5 9.90218 17.5 7.91667C17.5 5.8456 15.8211 4.16667 13.75 4.16667C12.7418 4.16667 11.8294 4.56239 11.154 5.2105L10.577 5.76422ZM10 4.00798C9.0268 3.074 7.70545 2.5 6.25004 2.5C3.2585 2.5 0.833374 4.92512 0.833374 7.91667C0.833374 13.2235 6.64199 16.1542 9.01153 17.1289C9.64968 17.3914 10.3504 17.3914 10.9885 17.1289C13.3581 16.1542 19.1667 13.2235 19.1667 7.91667C19.1667 4.92512 16.7416 2.5 13.75 2.5C12.2946 2.5 10.9733 3.074 10 4.00798Z"
+					fill=""
+				/>
+			</svg>
+		</button>
+	</div>
+	<div class="">
+		<img src="./img/discount/03.png" class="card__picture" alt="Headphone" />
+	</div>
+	<div class="card__desc">
+		<div class="card__title">Apple Watch Series 9 GPS 41mm Starlight Aluminium Case</div>
+		<div class="card__price">399 &#36</div>
+	</div>
+	<div class="card__btn">
+		<button class="btn btn--small" data-cart>Buy Now</button>
+	</div>
+</div>
+<div class="card" data-id="04">
+	<div class="card__fav">
+		<button class="btn-fav">
+			<svg class="btn-fav__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path
+					fill-rule="evenodd"
+					clip-rule="evenodd"
+					d="M10.577 5.76422C10.2546 6.07365 9.74548 6.07365 9.42304 5.76422L8.84604 5.2105C8.17068 4.56239 7.25832 4.16667 6.25004 4.16667C4.17897 4.16667 2.50004 5.8456 2.50004 7.91667C2.50004 9.90219 3.57486 11.5417 5.1265 12.8888C6.67947 14.237 8.53621 15.1312 9.64558 15.5876C9.87754 15.683 10.1225 15.683 10.3545 15.5876C11.4639 15.1312 13.3206 14.237 14.8736 12.8888C16.4252 11.5417 17.5 9.90218 17.5 7.91667C17.5 5.8456 15.8211 4.16667 13.75 4.16667C12.7418 4.16667 11.8294 4.56239 11.154 5.2105L10.577 5.76422ZM10 4.00798C9.0268 3.074 7.70545 2.5 6.25004 2.5C3.2585 2.5 0.833374 4.92512 0.833374 7.91667C0.833374 13.2235 6.64199 16.1542 9.01153 17.1289C9.64968 17.3914 10.3504 17.3914 10.9885 17.1289C13.3581 16.1542 19.1667 13.2235 19.1667 7.91667C19.1667 4.92512 16.7416 2.5 13.75 2.5C12.2946 2.5 10.9733 3.074 10 4.00798Z"
+					fill=""
+				/>
+			</svg>
+		</button>
+	</div>
+	<div class="">
+		<img src="./img/discount/04.png" class="card__picture" alt="Headphone" />
+	</div>
+	<div class="card__desc">
+		<div class="card__title">Apple iPhone 14 Pro 1TB Gold (MQ2V3)</div>
+		<div class="card__price">1499 &#36</div>
+	</div>
+	<div class="card__btn">
+		<button class="btn btn--small" data-cart>Buy Now</button>
+	</div>
+</div>
+</div>
+	</div>
+</div>
+
+		<!--  -->
+		<section class="banner2">
+	<div class="sale__title">
+		<h2>Big Summer <span>Sale</span></h2>
+		<p class="sale__desc">Commodo fames vitae vitae leo mauris in. Eu consequat.</p>
+		<button class="summer_sale">Shop Now</button>
+	</div>
+</section>
+
+		<!--  -->
+		<footer class="footer">
+	<div class="container">
+		<div class="footer__row">
+			<div class="footer__logo">
+				<img src="./img/logo/Logowhite.svg" alt="" />
+				<div class="logo__desc">
+					We are a residential interior design firm located in Portland. Our
+					<span class="text_break">boutique-studio offers more than</span>
+				</div>
+			</div>
+			<div class="footer__box">
+				<h4>Services</h4>
+				<ul class="footer__list">
+					<li>Bonus program</li>
+					<li>Gift cards</li>
+					<li>Credit and payment</li>
+					<li>Service contracts</li>
+					<li>Non-cash account</li>
+					<li>Payment</li>
+				</ul>
+			</div>
+			<div class="footer__box">
+				<h4>Assistance to the buyer</h4>
+				<ul class="footer__list">
+					<li>Find an order</li>
+					<li>Terms of delivery</li>
+					<li>Exchange and return of goods</li>
+					<li>Guarantee</li>
+					<li>Frequently asked questions</li>
+					<li>Terms of use of the site</li>
+				</ul>
+			</div>
+		</div>
+		<div class="socials">
+			<div>
+				<ul class="socials__row">
+					<li><img src="./img/icons/footer/twitter.svg" alt="" /></li>
+					<li><img src="./img/icons/footer/facebook.svg" alt="" /></li>
+					<li><img src="./img/icons/footer/tiktok.svg" alt="" /></li>
+					<li><img src="./img/icons/footer/instagram.svg" alt="" /></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+		<!--  -->
+
+		<script src="./js/index.bundle.js"></script>
+	</body>
+</html>

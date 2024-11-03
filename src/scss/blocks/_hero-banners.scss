@@ -1,0 +1,87 @@
+.hero__grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 2fr;
+	grid-template-rows: repeat(2, 1fr);
+
+	grid-template-areas:
+		'ps ps mac'
+		'air vis mac';
+}
+.hero__playstation {
+	display: flex;
+	grid-area: ps;
+	align-items: center;
+}
+
+.hero__img-mob {
+	display: none;
+	grid-area: img;
+}
+.hero__desc {
+	flex-grow: 1;
+	color: #000;
+	justify-content: center;
+	grid-area: desc;
+}
+.playstation__title {
+	font-size: 49px;
+	font-family: sf-medium;
+	line-height: 1.37931;
+}
+.hero__text {
+	font-size: 14px;
+	line-height: 1, 71428;
+	color: #909090;
+	font-family: sf-medium;
+}
+.text_break {
+	display: block;
+}
+.hero__airpods {
+	grid-area: air;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ededed;
+}
+.airpods__title {
+	font-size: 29px;
+	font-family: sf-light;
+	margin-left: 48px;
+}
+
+.text-bold {
+	font-family: sf-medium;
+}
+.hero__vision {
+	grid-area: vis;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #353535;
+}
+.vision__title {
+	font-size: 29px;
+	font-family: sf-light;
+	color: #fff;
+	margin-left: 16px;
+}
+.hero__macbook {
+	grid-area: mac;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ededed;
+}
+.macbook__title {
+	font-size: 64px;
+	font-family: sf-thin;
+	margin-left: 56px;
+}
+.hero__shop-now {
+	font-size: 16px;
+	padding: 16px 56px;
+	border: 1px solid #383838;
+	border-radius: 6px;
+	font-family: sf-medium;
+}

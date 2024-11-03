@@ -1,0 +1,35 @@
+.banner2 {
+	background-image: url('./../img/footer/bg.jpg');
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	@media (width<768px) {
+		background-image: url('./../img/footer/bg_mob.jpg');
+	}
+}
+.sale__title {
+	padding: 159px 0 89px 0;
+	color: #fff;
+	font-size: 72px;
+	line-height: 1;
+	text-align: center;
+	h2 {
+		font-family: sf-thin;
+	}
+	h2 span {
+		font-family: sf-medium;
+	}
+}
+.sale__desc {
+	color: #787878;
+	font-size: 16px;
+	font-family: sf-regular;
+	line-height: 2;
+}
+.summer_sale {
+	font-size: 16px;
+	border: 1px solid #fff;
+	padding: 16px 54px;
+	border-radius: 8px;
+}

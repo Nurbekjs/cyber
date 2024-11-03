@@ -1,0 +1,41 @@
+.banners {
+	margin-top: 56px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+	justify-content: center;
+}
+.banners__headphones {
+	width: 100%;
+}
+.banners__ipad {
+	background-color: #f9f9f9;
+}
+.banners__galaxy {
+	background-color: #eaeaea;
+}
+.banners__macbook {
+	background-color: #2c2c2c;
+	color: #fff;
+}
+.banners__text {
+	font-size: 14px;
+	line-height: 1.714285714285714;
+	font-family: sf-medium;
+	color: #909090;
+}
+.banners__desc {
+	margin: 32px;
+}
+.banners__title {
+	font-size: 33px;
+	font-family: sf-light;
+}
+.banner__btn {
+	justify-self: center;
+}
+.banners__picture {
+	height: 376px;
+	width: 100%;
+	text-align: center;
+}

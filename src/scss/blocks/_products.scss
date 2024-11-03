@@ -1,0 +1,24 @@
+.products__title {
+	display: flex;
+	gap: 32px;
+	font-size: 18px;
+	line-height: 1, 777777777777778;
+	color: #000;
+	:first-child {
+		border-bottom: 2px solid #000;
+	}
+	:not(:first-child) {
+		color: #8b8b8b;
+	}
+	margin-bottom: 32px;
+}
+
+.products__cards {
+	display: grid;
+	gap: 16px;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+	justify-content: center;
+	align-items: center;
+}

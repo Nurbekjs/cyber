@@ -1,0 +1,34 @@
+<header class="header">
+	<div class="container">
+		<div class="header__row">
+			<div class="logo"><img src="./img/logo/Logo.svg" alt="" /></div>
+			<div class="search">
+				<div class="search__icon"></div>
+				<input type="text" class="search__input" placeholder="Search" />
+			</div>
+			<div class="header__menu">
+				<div class="menu__item">Home</div>
+				<div class="menu__item">About</div>
+				<div class="menu__item">Contact Us</div>
+				<div class="menu__item">Blog</div>
+			</div>
+			<div class="user__cabinet">
+				<button class="user__item"><img src="./../../img/icons/menu/Favorites.svg" alt="" /></button>
+				<div class="cart__holder">
+					<button class="user__item" id="open_modal">
+						<img src="./../../img/icons/menu/Cart1.svg" alt="" />
+					</button>
+					<div class="cart_amount" id="cart_amount">0</div>
+				</div>
+
+				@@include('./templates/cart-modal.html')
+
+				<button class="user__item" id="open__modal"><img src="./../../img/icons/menu/User.svg" alt="" /></button>
+			</div>
+			<button class="mobile-nav-btn">
+				<div class="nav-icon"></div>
+			</button>
+		</div>
+	</div>
+</header>
+@@include('mobile-nav.html')
